@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
+    <title>Coffee Shop - Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="site-header-container">
+        <section class="site-header">
+          <img
+            class="site-header__logo"
+            src="./assets/logos/coffee-beans-logo-and-footer.svg"
+            alt="coffee bean logo"
+          />
+          <h1 class="site-header__title">
+            <a class="site-header__link site-header__link--header" href="#hero"
+              >Bru</a
+            >
+          </h1>
+        </section>
+
+        <nav class="site-header__nav">
+          <ul class="site-header__list">
+            <li class="site-header__list-item">
+              <a
+                class="site-header__link site-header__link--normal"
+                href="#hero"
+                >ABOUT</a
+              >
+            </li>
+            <li class="site-header__list-item">
+              <a
+                class="site-header__link site-header__link--normal"
+                href="./pages/menu.html"
+                >MENU</a
+              >
+            </li>
+            <li class="site-header__list-item">
+              <a
+                class="site-header__link site-header__link--normal site-header__link--highlight"
+                href="./pages/menu.html"
+                >SHOP NOW</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <article class="hero-article">
+          <h1 class="hero__title">Bru Coffee</h1>
+          <p class="hero__text">
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffea species.
+          </p>
+          <a class="button button--hero" href="./pages/menu.html"
+            >SHOP NOW
+            <div class="button--border"></div>
+          </a>
+        </article>
+        <figure class="hero-image">
+          <img
+            class="hero__image"
+            src="./assets/images/coffeebeans-hero.png"
+            alt="coffee bag"
+          />
+        </figure>
+      </section>
+
+      <section class="products">
+        <h2 class="products__heading">Our Products</h2>
+        <div class="products__item-container">
+          <article class="products__item products__item--margin">
+            <img
+              class="products__image"
+              src="./assets/images/coffeebeans.png"
+              alt="coffee beans"
+            />
+            <div class="products__details">
+              <h3 class="products__title">Coffee beans</h3>
+              <p class="products__text">Pack of 3</p>
+              <p class="products__price">$19</p>
+            </div>
+          </article>
+
+          <article class="products__item products__item--margin">
+            <img
+              class="products__image products__image--cold-brew"
+              src="./assets/images/coldbrew.png"
+              alt="Cold Brew"
+            />
+            <div class="products__details">
+              <h3 class="products__title">Cold Brew</h3>
+              <p class="products__text">1 can</p>
+              <p class="products__price">$5</p>
+            </div>
+          </article>
+
+          <article class="products__item">
+            <img
+              class="products__image"
+              src="./assets/images/inhousebrew.png"
+              alt="in-house brew"
+            />
+            <div class="products__details">
+              <h3 class="products__title">In-house Brew</h3>
+              <p class="products__text">1 cup</p>
+              <p class="products__price">$3</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="button button--products" href="./pages/menu.html"
+          >VIEW ALL
+          <div class="button--border"></div>
+        </a>
+      </section>
+
+      <section class="discount">
+        <div class="discount__description">
+          <h2 class="discount__heading">We're Different</h2>
+          <p class="discount__description-text">
+            We grow and roast our own beans. Every bean, every cup, every step
+            of the way, we strive for excellence.
+          </p>
+
+          <div class="discount__logo-container">
+            <img
+              class="discount__logo"
+              src="./assets/logos/planting.svg"
+              alt="Coffee Plantations"
+            />
+            <img
+              class="discount__logo"
+              src="./assets/logos/coffee-beans.svg"
+              alt="Coffee Beans"
+            />
+            <img
+              class="discount__logo"
+              src="./assets/logos/coffee-cup.svg"
+              alt="Cup of coffee"
+            />
+          </div>
+          <a class="button button--hero" href="#hero"
+            >LEARN MORE
+            <div class="button--border"></div>
+          </a>
+        </div>
+
+        <div class="discount__card">
+          <div class="discount__card-border">
+            <img
+              class="discount__card-image"
+              src="./assets/images/tiltedcan.png"
+              alt="Titled can of Cold-brew coffee"
+            />
+          </div>
+        </div>
+
+        <article class="discount__promo">
+          <div class="discount__promo-container">
+            <p class="discount__text discount__text--normal">
+              Get 20% off your first order with code:
+              <span class="discount__text discount__text--bold">FirstBru</span>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <section class="footer">
+          <figure class="footer-background">
+            <img
+              class="footer-background__image footer-background__image--left"
+              src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              alt="Coffee bean logo"
+            />
+          </figure>
+
+          <article class="address">
+            <h3 class="address__title">Address</h3>
+            <p class="address__text">
+              123 Broadway Boulevard <br />
+              Vancouver
+            </p>
+          </article>
+
+          <article class="working-hours">
+            <h3 class="working-hours__title">Hours</h3>
+            <ul class="working-hours__list">
+              <li class="working-hours__text working-hours__text-normal">
+                <span class="working-hours__text working-hours__text--bold"
+                  >Monday - Friday:</span
+                >
+                8am - 9pm
+              </li>
+              <li class="working-hours__text working-hours__text-normal">
+                <span class="working-hours__text working-hours__text--bold"
+                  >Saturday - Sunday:</span
+                >
+                9am - 6pm
+              </li>
+            </ul>
+          </article>
+
+          <article class="social">
+            <h3 class="social__title">Social</h3>
+            <a
+              class="social__link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <img
+                class="social__icon"
+                src="./assets/logos/Facebook-Icon.svg"
+                alt="facebook"
+              />
+            </a>
+            <a
+              class="social__link"
+              href="https://www.yelp.com/"
+              target="_blank"
+            >
+              <img
+                class="social__icon"
+                src="./assets/logos/Yelp-Icon.svg"
+                alt="yelp"
+              />
+            </a>
+            <a
+              class="social__link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <img
+                class="social__icon"
+                src="./assets/logos/Instagram-Icon.svg"
+                alt="instagram"
+              />
+            </a>
+          </article>
+
+          <figure class="footer-background">
+            <img
+              class="footer-background__image footer-background__image--right"
+              src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              alt="Coffee bean logo"
+            />
+          </figure>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  color: #393939;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 3.3rem;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* HEADER SECTION for landing & menu page */
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff0ed;
+}
+
+.site-header {
+  margin: 0;
+  margin-right: auto;
+}
+.site-header__logo {
+  width: 5rem;
+  display: inline-block;
+  margin-left: 20px;
+}
+.site-header__title {
+  font-size: 6rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+.site-header__list {
+  list-style: none;
+  padding-left: 0;
+}
+.site-header__link {
+  text-decoration: none;
+  color: #393939;
+  padding-left: 20px;
+  font-weight: 300;
+}
+.site-header__link--header {
+  font-size: 6rem;
+  padding-left: 0;
+}
+.site-header__link--normal {
+  font-size: 3.3rem;
+}
+.site-header__link--highlight {
+  color: #5bacc3;
+}
+.site-header__title, .site-header__nav, .site-header__list-item {
+  display: inline-block;
+  margin: 20px;
+}
+
+@keyframes rotate-can {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes color-pop {
+  from {
+    background: #393939;
+  }
+  to {
+    background: #5bacc3;
+  }
+}
+/* HERO SECTION */
+.hero {
+  background-color: #fff0ed;
+  padding: 0 0 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero__title {
+  margin-bottom: 20px;
+}
+.hero__text {
+  margin-bottom: 40px;
+}
+
+.hero-article {
+  width: 30vw;
+  display: inline-block;
+  margin-left: 6rem;
+  margin-right: 16rem;
+  vertical-align: 180px;
+}
+
+.hero-image {
+  display: inline-block;
+  padding-left: 4rem;
+}
+
+.button {
+  width: 180px;
+  background: #5bacc3;
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  position: relative;
+}
+.button--hero {
+  display: inline-block;
+}
+.button--products {
+  display: block;
+  margin: 20px auto;
+}
+.button--border {
+  display: inline-block;
+  border: 2px solid #393939;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  transition: 0.1s;
+}
+.button--border:active {
+  top: 0;
+  left: 0;
+}
+
+/* PRODUCTS SECTION */
+.products {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+.products__heading {
+  padding: 20px;
+  margin: 20px 20px 0;
+  text-align: center;
+}
+.products__item-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.products__item {
+  display: inline-block;
+  background-color: #fff;
+  width: 330px;
+  height: 440px;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  margin: 40px 20px;
+}
+.products__item--margin {
+  margin-right: 10rem;
+}
+.products__details {
+  background-color: #fff0ed;
+  display: flex;
+  flex-flow: column wrap;
+  height: 33%;
+}
+.products__image {
+  height: 280px;
+  margin: 20px 80px 0;
+}
+.products__image--cold-brew {
+  margin-left: 100px;
+}
+.products__title, .products__text, .products__price {
+  text-align: left;
+  margin: 40px 20px;
+}
+.products__title {
+  margin-bottom: 0;
+}
+.products__text {
+  color: #909090;
+  margin: 0 20px;
+}
+.products__price {
+  color: #5bacc3;
+  font-size: 3.3rem;
+  font-weight: 700;
+  margin: 50px 0;
+}
+
+/* DISCOUNTS SECTION */
+.discount {
+  width: 100%;
+  height: 100vh;
+  padding: 4rem 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Description section wt button */
+}
+.discount__description {
+  width: 40vw;
+  height: 44vh;
+  padding: 40px;
+  margin: 40px;
+  margin-left: 68px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.discount__heading {
+  font-size: 5rem;
+}
+.discount__logo-container {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.discount__logo {
+  width: 50px;
+}
+
+/* DISCOUNT - TILTED CAN SECTION */
+.discount__card {
+  background: url(../assets/images/coldbrewbackground.png);
+  background-position: center;
+  background-size: cover;
+  width: 35vw;
+  height: 44vh;
+  margin: 40px;
+  margin-right: 60px;
+  position: relative;
+}
+.discount__card-border {
+  display: inline-block;
+  border: 5px solid #5bacc3;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discount__card-image {
+  height: 280px;
+}
+.discount__card-image:hover {
+  animation: rotate-can 2s linear infinite normal;
+}
+
+/* DISCOUNT CODE BANNER PORTION */
+.discount__promo {
+  display: inline-block;
+  width: 100%;
+  height: 34vh;
+  margin: 40px;
+  margin-right: 0;
+}
+.discount__promo-container {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2.5s;
+}
+
+.discount__text {
+  width: 90%;
+  background: #393939;
+  color: #fff;
+  font-size: 4.5rem;
+  padding: 20px;
+  animation: color-pop 2.5s linear infinite alternate;
+}
+.discount__text--normal {
+  font-weight: 400;
+}
+.discount__text--bold {
+  font-weight: 700;
+}
+.discount__description-text {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #fff0ed;
+  line-height: 1.5;
+  padding: 20px 0px;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer-background {
+  display: inline-block;
+  position: relative;
+}
+.footer-background__image {
+  width: 120px;
+  opacity: 25%;
+  position: absolute;
+}
+.footer-background__image--left {
+  top: 20px;
+  left: -190px;
+}
+.footer-background__image--right {
+  top: 88px;
+  left: 35px;
+}
+
+.address,
+.working-hours,
+.social {
+  display: inline-block;
+  margin: 40px 60px;
+  padding: 20px;
+}
+.address__title,
+.working-hours__title,
+.social__title {
+  margin-bottom: 10px;
+}
+
+.working-hours__list {
+  list-style: none;
+  padding: 0;
+}
+.working-hours__text {
+  font-size: 1.8rem;
+}
+.working-hours__text--normal {
+  font-weight: 400;
+}
+.working-hours__text--bold {
+  font-weight: 700;
+}
+
+.social__icon {
+  width: 50px;
+}/*# sourceMappingURL=landing.css.map */
