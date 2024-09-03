@@ -1,0 +1,140 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+
+/* MENU HEADING & BACKGROUND */
+
+.menu {
+  &__header {
+    background: url(../assets/images/coffee-circle.jpg);
+    width: 100vw;
+    height: 70rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    display: block;
+    width: 30rem;
+    height: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: $font-color-primary;
+    background-position: center;
+    color: $font-color-secondary;
+    position: relative;
+  }
+
+  &__title-border {
+    display: inline-block;
+    width: 30rem;
+    height: 20rem;
+    border: 5px solid $color-primary;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+  }
+
+  /* MENU NAVIGATION BAR */
+
+  &__nav {
+    background-color: $font-color-primary;
+    height: 80px;
+  }
+
+  &__nav-list,
+  &__nav-item {
+    display: inline-block;
+  }
+
+  &__nav-list {
+    list-style: none;
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__nav-item {
+    border-left: 4px solid $font-color-highlight;
+    margin: 20px 0;
+  }
+
+  &__link {
+    color: $font-color-secondary;
+    text-decoration: none;
+    width: auto;
+    margin: 20px;
+    font-size: 2.1rem;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+
+    /* just for my fun */
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+/* MENU MAIN SECTION */
+
+/* MENU sub-SECTIONS - hot drinks, cold drinks, pastries */
+
+.menu-products {
+  &__drinks-hot,
+  &__drinks-cold,
+  &__pastries {
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+  }
+
+  &__drinks-hot,
+  &__pastries {
+    background-color: $color-secondary;
+  }
+
+  &__drinks-cold {
+    background-color: $color-neutral;
+  }
+}
+
+.products__heading,
+.item__heading {
+  margin-bottom: 0;
+}
+
+/* MENU ITEMS STYLES */
+
+.item {
+  padding: 0.5rem 0.7rem;
+  margin: 20px;
+
+  &__list {
+    padding: 0;
+  }
+
+  &__description,
+  &__price {
+    font-size: 1.8rem;
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.5rem;
+  }
+
+  &__description {
+    font-style: italic;
+    text-align: center;
+    width: 55ch;
+  }
+
+  &__price {
+    color: $font-color-highlight;
+    font-style: normal;
+  }
+}

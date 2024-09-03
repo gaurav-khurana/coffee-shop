@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  color: #393939;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 3.3rem;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* HEADER SECTION for landing & menu page */
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff0ed;
+}
+
+.site-header {
+  margin: 0;
+  margin-right: auto;
+}
+.site-header__logo {
+  width: 5rem;
+  display: inline-block;
+  margin-left: 20px;
+}
+.site-header__title {
+  font-size: 6rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+.site-header__list {
+  list-style: none;
+  padding-left: 0;
+}
+.site-header__link {
+  text-decoration: none;
+  color: #393939;
+  padding-left: 20px;
+  font-weight: 300;
+}
+.site-header__link--header {
+  font-size: 6rem;
+  padding-left: 0;
+}
+.site-header__link--normal {
+  font-size: 3.3rem;
+}
+.site-header__link--highlight {
+  color: #5bacc3;
+}
+.site-header__title, .site-header__nav, .site-header__list-item {
+  display: inline-block;
+  margin: 20px;
+}
+
+@keyframes rotate-can {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes color-pop {
+  from {
+    background: #393939;
+  }
+  to {
+    background: #5bacc3;
+  }
+}
+/* MENU HEADING & BACKGROUND */
+.menu {
+  /* MENU NAVIGATION BAR */
+}
+.menu__header {
+  background: url(../assets/images/coffee-circle.jpg);
+  width: 100vw;
+  height: 70rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__title {
+  display: block;
+  width: 30rem;
+  height: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: #393939;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+.menu__title-border {
+  display: inline-block;
+  width: 30rem;
+  height: 20rem;
+  border: 5px solid #5bacc3;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+.menu__nav {
+  background-color: #393939;
+  height: 80px;
+}
+.menu__nav-list, .menu__nav-item {
+  display: inline-block;
+}
+.menu__nav-list {
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu__nav-item {
+  border-left: 4px solid #5bacc3;
+  margin: 20px 0;
+}
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  transition: 0.3s ease-in;
+  /* just for my fun */
+}
+.menu__link:hover {
+  color: #5bacc3;
+}
+
+/* MENU MAIN SECTION */
+/* MENU sub-SECTIONS - hot drinks, cold drinks, pastries */
+.menu-products__drinks-hot, .menu-products__drinks-cold, .menu-products__pastries {
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+}
+.menu-products__drinks-hot, .menu-products__pastries {
+  background-color: #fff0ed;
+}
+.menu-products__drinks-cold {
+  background-color: #f7f7f7;
+}
+
+.products__heading,
+.item__heading {
+  margin-bottom: 0;
+}
+
+/* MENU ITEMS STYLES */
+.item {
+  padding: 0.5rem 0.7rem;
+  margin: 20px;
+}
+.item__list {
+  padding: 0;
+}
+.item__description, .item__price {
+  font-size: 1.8rem;
+  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+.item__description {
+  font-style: italic;
+  text-align: center;
+  width: 55ch;
+}
+.item__price {
+  color: #5bacc3;
+  font-style: normal;
+}/*# sourceMappingURL=menu.css.map */
